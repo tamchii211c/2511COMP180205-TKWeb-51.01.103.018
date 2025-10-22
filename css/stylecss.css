@@ -1,0 +1,11 @@
+h1 {color:#5d7b6f; font-family:"My font";}
+h2 {color:#375739;font-family:"San Serif";}
+p {font-family:"Font viết tay"}
+body {background-color:#eae7d6;}
+
+@font-face {
+font-family: "My font"; src:url(Bungee-Regular.ttf) format("truetype");} 
+@font-face {
+font-family:"Font viết tay"; src:url(DFVN-Excalifont.ttf) format("truetype");}   
+@font-face {
+font-family:"Font tiêu đề phụ"; src:url() format("truetype");} 
