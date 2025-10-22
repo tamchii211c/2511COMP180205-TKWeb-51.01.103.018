@@ -1,0 +1,205 @@
+ #Shark{
+    left:00px; 
+    top:500px;
+    position:absolute;
+    animation-name:Shark;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes Shark {
+0%   {left:100px; top:100px;}
+10%  {left:200px; top:200px;}
+20%  {left:300px; top:300px;}
+30%  {left:400px; top:400px;}
+40%  {left:500px; top:400px;}
+50%  {left:500px; top:500px;}
+60%  {left:400px; top:500px;}
+70%  {left:300px; top:400px;}
+80%  {left:200px; top:300px;}
+90%  {left:200px; top:200px;}
+100% {left:100px; top:100px;transform:rotateY(0deg) scaleX(-1);}
+}
+#Turtle{
+    left:10px; 
+    top:10px;
+    position:absolute;
+    animation-name:Turtle;
+    animation-duration: 80s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes Turtle {
+0%   {left:10px; top:10px;}
+10%  {left:300px; top:50px;}
+20%  {left:600px; top:100px;}
+30%  {left:900px; top:150px;}
+40%  {left:1100px; top: 200px;}
+50%  {left:900px; top:250px;}
+60%  {left:600px; top:300px;}
+70%  {left:500px; top:400px;transform:rotateY(0deg) scaleX(-1);}
+80%  {left:400px; top:400px;}
+90%  {left:300px; top:300px;}
+100% {left:200px; top:600px; }
+120% {left:100px; top:500px;}
+
+}
+#diver1 {
+  left: 100px;
+  top: 200px;
+  position: absolute;
+  animation-name: diver1;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes diver1 {
+  0%   { left: 100px; top: 300px; }
+  20%  { left: 300px; top: 300px; }
+  40%  { left: 500px; top: 300px; }
+  60%  { left: 700px; top: 300px; }
+  80%  { left: 900px; top: 300px; }
+  100% { left: 1000px; top: 300px; }
+}
+#diver2 {
+    right: 100px;
+    top:10px;
+    position: absolute;
+    animation-name: diver2;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes diver2 {
+0%   {right:100px; top:50px; transform:scaleX(-1)}
+20%  {right:300px; top:100px;}
+40%  {right:600px; top:200px;}
+60%  {right:900px; top:400px;}
+80%  {right:800px; top:500px;}
+100% {right:600px; top:500px; transform:scaleX(1);}
+}
+
+#diver3 {
+    right: 100px;
+    top:10px;
+    position: absolute;
+    animation-name: diver3;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver3 {
+0%   {right:100px; top:600px; transform:rotateY(0deg) scaleX(-1)}
+20%  {right:300px; top:600px;}
+40%  {right:600px; top:400px;}
+60%  {right:800px; top:200px;}
+80%  {right:600px; top:100px;}
+100% {right:500px; top:50px; transform:rotateY(0deg) scaleX(1);}
+}
+#botbien {
+    right: 10px;
+    top:10px;
+    position: absolute;
+    animation-name: botbien;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes botbien {
+0%   {right:100px; top:600px; transform:scaleX(-1)}
+20%  {right:100px; top:600px;}
+40%  {right:100px; top:600px;}
+50%  {right:100px; top:400px;transform:scaleX(-1)}
+60%  {right:100px; top:200px;}
+80%  {right:100px; top:100px;}
+100% {right:100px; top:50px; transform:scaleX(-1);}
+}
+#botbien2 {
+    right: 10px;
+    top:10px;
+    position: absolute;
+    animation-name: botbien2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes botbien2 {
+0%   {left:200px; top:600px;}
+20%  {left:200px; top:600px;}
+40%  {left:200px; top:600px;}
+50%  {left:200px; top:400px;}
+60%  {left:200px; top:200px;}
+80%  {left:200px; top:100px;}
+100% {left:200px; top:50px; }
+}
+#bongbong {
+    left: 500px;
+    top:1000px;
+    position: absolute;
+    animation-name: bongbong;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes bongbong {
+0%   {left:500px; top:600px; transform:scaleX(-1)}
+20%  {left:500px; top:600px;}
+40%  {left:500px; top:600px;}
+50%  {left:500px; top:400px;transform:scaleX(-1)}
+60%  {left:500px; top:200px;}
+80%  {left:500px; top:100px;}
+100% {left:500px; top:50px; transform:scaleX(-1);}
+}
+#cavang {
+    right: 30px;
+    top:600px;
+    position: absolute;
+    animation-name: cavang;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes cavang {
+0%   {right:500px; top:600px; transform: rotateY(-0deg);} 
+20%  {right:400px; top:600px;}
+40%  {right:300px; top:300px;}
+60%  {right:300px; top:300px;}
+80%  {right:400px; top:600px;}
+100% {right:500px; top:600px; transform:rotateY(-180deg);}
+}
+#cavangbentrai {
+    left: 30px;
+    top:600px;
+    position: absolute;
+    animation-name: cavangbentrai;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes cavangbentrai {
+0%   {left:100px; top:600px; transform:scaleX(1)}
+20%  {left:100px; top:600px;}
+40%  {left:100px; top:300px;}
+50%  {left:100px; top:0px;transform:scaleX(1)}
+60%  {left:100px; top:300px;}
+80%  {left:100px; top:600px;}
+100% {left:100px; top:600px; transform: scaleX(1);}
+}
+body{
+    background-image:url("hình đáy biển.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}

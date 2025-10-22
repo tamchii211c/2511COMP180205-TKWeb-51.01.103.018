@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bộ sưu tập</title>
+  <link rel="stylesheet" href="/css/cssstyle.css">
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="logo" href="/html/Trang chủ.html">🦇 Halloween Festival</a></div></header>
+  <div class="bg-decor">
+    <div class="bats">
+      <span class="bat b1"><img src="/image/Iconcreme-Halloween-Bat.512.png" width="50"></span>
+      <span class="bat b2"><img src="/image/Iconcreme-Halloween-Bat.512.png" width="50"></span>
+      <span class="bat b3"><img src="/image/Iconcreme-Halloween-Bat.512.png" width="50"></span>
+    </div>
+    <div class="candle"><img src="/image/Iconcreme-Halloween-Twitter.512.png" width="200"></div>
+    <div class="bingo"><img src="/image/Iconcreme-Halloween-Pumpkin.512.png" width="200"></div>
+  </div>
+  <audio autoplay>
+    <source src="nhạc halloween.mp3" type="audio/mpeg">
+  </audio>
+  <main class="container" style="padding:24px 16px;">
+    <h2>Bộ sưu tập hình ảnh </h2>
+    <div class="gallery-grid">
+      <img src="/image/Iconcreme-Halloween-Mummy.512.png" alt="Mummy">
+      <img src="https://img.freepik.com/premium-vector/scary-halloween-scene-with-scary-scary-ghost-background_1288234-2895.jpg?w=2000" alt="">  
+      <img src="/image/Sea Monster.ico" alt="Sea monster">
+      <img src="https://www.publicdomainpictures.net/pictures/640000/velka/halloween-scary-background-1729405214nwa.jpg" alt="">
+    </div>
+  </main>
+  <center>
+     <img id="anh" src="/image/Iconcreme-Halloween-Bat.512.png" alt="Ảnh" width="500" height="400"/> 
+  </center>
+        <script>
+        var dsAnh = [
+            "/image/Soul.ico",
+            "/image/Witch.ico",
+            "/image/anh 2.webp",
+            "/image/Iconcreme-Halloween-Home.512.png",
+            "/image/anh 1.webp",
+        ];  
+   
+        var i = 0;
+        function chuyenAnh() {
+            document.getElementById("anh").src = dsAnh[i];
+            i++;
+            if (i == dsAnh.length) i = 0;
+            setTimeout(chuyenAnh, 3000); 
+        }
+        chuyenAnh();
+        
+        </script>
+  <footer class="site-footer"><div class="container"><p>© </p></div></footer>
+</body>
+</html>

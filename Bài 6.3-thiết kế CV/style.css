@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background:#fefefe ;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Prái */
+.left {
+  background:#5c796d;
+  color: white;
+  width: 35%;
+  padding: 30px;
+}
+
+.left h1 {
+  margin: 0;
+  font-size: 28px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.left h2 {
+  font-size: 18px;
+  margin-top: 25px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 3px;
+}
+
+.left p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Phải */
+.right {
+  background: #eae7d6;
+  width: 65%;
+  padding: 30px;
+}
+
+.right h2 {
+  color: #222;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.right p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Hiệu ứng chia khối */
+section {
+  margin-bottom: 25px;
+}
