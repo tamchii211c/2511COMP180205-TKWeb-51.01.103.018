@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góp ý</title>
+    <link rel="stylesheet" href="/css/styletest.css">
+    <style>
+        form{
+        background-color: #aeab9e;
+        display:block;
+        }
+        form span{
+        display: inline-block;
+        margin: 10px 3px 3px 8px;
+        }
+        form input, form select{
+        width: 200px;
+        height:20px;
+        margin: 0px 5px;
+        box-sizing: border-box;
+        display:flex;
+        }
+        textarea{
+        height:100px;
+        }
+        body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+        }  
+    </style>
+</head>
+<body>
+    <h1><center>GÓP Ý CHO CHILLI NHÉ</center></h1>
+    <form>
+        <span>Bạn biết đến mình từ:</span>
+        <select name="from">
+            <option value="1">Facebook </option>
+            <option value="2">Tik tok </option>
+            <option value="3">Được giới thiệu </option>
+            <option value="4">Khác </option>
+        </select><br>
+        <span><a>Về sản phẩm:             :</a></span>
+        <input type="text" name="sanpham"><br>
+        <span><a>Về giá cả               :</a></span>
+        <input type="text" name="giâc"><br>
+        <span>Điều gì làm bạn không hài lòng ở dịch vụ của Chilli:</span><br>
+        <textarea name="mistake" cols="100" ></textarea></p><br>        
+    <button onclick="alert('cảm ơn bạn đã góp ý')">Gửi góp ý</button>
+ 
+</form>
+</body>
+</html>
