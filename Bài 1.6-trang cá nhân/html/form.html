@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góp ý</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylecss.css">
+    <style>
+        form{
+        background-color: #dbd2ae;
+        display: in
+        }
+        form span{
+        display: inline-block;
+        margin: 10px 3px 3px 8px;
+        }
+        form input, form select{
+        width: 200px;
+        height:30px;
+        margin: 0px 5px;
+        box-sizing: border-box;
+        display:flex;
+        }
+        textarea{
+        height:100px;
+        }
+        body{
+        background-color: #eae7d6;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Website cá nhân</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../html/Trang chủ.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/sothichbai1.6.html">Sở thích</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kế hoạch học tập
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="../html/Kế hoạch học tập.html">Tổng quan</a></li>
+              <li><a class="dropdown-item" href="../html/năm nhất.html">Năm nhất</a></li>
+              <li><a class="dropdown-item" href="../html/Năm hai.html">Năm hai</a></li>
+              <li><a class="dropdown-item" href="../html/Năm ba.html">Năm ba</a></li>
+              <li><a class="dropdown-item" href="../html/Năm cuối.html">Năm cuối</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/form.html" >Góp ý</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <h1><center>GÓP Ý CHO MÌNH NHÉ</center></h1>
+    <form>
+        <span>Bạn biết đến mình từ:</span>
+        <select name="from">
+            <option value="1">Trường đại học </option>
+            <option value="2">Trường cấp 3 </option>
+            <option value="3">Trường cấp 2 </option>
+            <option value="4">Khác </option>
+        </select><br>
+        <span><a>Về trang chủ:             :</a></span>
+        <input type="text" name="trangchu">
+        <span><a>Về sở thích               :</a></span>
+        <input type="text" name="sothich">
+        <span>Về kế hoạch học tập          :</span>
+        <input type="text" name="kehoachhoctap"><br>
+        <span>Điều gì làm bạn không hài lòng ở trang web:</span><br>
+        <textarea name="mistake" cols="100" ></textarea></p>     
+    <button onclick="alert('cảm ơn bạn đã góp ý')">Gửi góp ý</button>
+ 
+</form>
+</body>
+</html>
