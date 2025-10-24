@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8d3d3;
+}
+
+.product-detail {
+background: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-image img {
+width: 100%;
+border-radius: 10px;
+}
+
+.product-title {
+font-size: 1.8rem;
+font-weight: 700;
+}
+
+.product-price {
+color: #d9534f;
+font-size: 1.5rem;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.btn-add {
+background-color: #000;
+color: #fff;
+}
+
+.btn-add:hover {
+background-color: #333;
+}
+
+.specs-list li {
+margin-bottom: 6px;
+} 
+
+.navbar {
+  background-color: #e6b7b8 !important; /* hồng nhạt dịu */
+}
+
+.navbar .nav-link {
+  color: #4b2e2b !important; /* nâu sậm, dễ đọc */
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #9b4b4b !important; /* hồng đậm khi hover */
+}
+
+.footer {
+  background-color: #e6b7b8;
+  margin-top:20px;
+}
+
+@font-face {
+font-family: "My font"; src:url(Bungee-Regular.ttf) format("truetype");}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family:"My font";
+}

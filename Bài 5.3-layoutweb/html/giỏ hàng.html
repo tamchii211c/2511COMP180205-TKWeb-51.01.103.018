@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng - CHILLI MÓC LEN</title>
+  <link rel="stylesheet" href="../css/styletbh.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f8d3d3;
+    }
+    .navbar {
+       background-color: #e6b7b8 !important; /* hồng nhạt dịu */
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .cart-container {
+      width: 80%;
+      margin: 30px auto;
+      background: #9b4b4b;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+    th {
+      background-color: #d88686;
+      color: white;
+    }
+    img {
+      width: 80px;
+      border-radius: 10px;
+    }
+    .total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .btn-clear, .btn-home {
+      background-color: #b85c5c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-right: 10px;
+    }
+    .btn-clear:hover, .btn-home:hover {
+      background-color: #873737;
+    }
+  </style>
+</head>
+<body>
+        <!-- Header -->
+      <div class="container mt-3">
+        <header class="text-center">
+          <h1 class="hh-company"><b>Chilli Móc Len</b></h1>
+          <h5 class="hh-slogan">Len lỏi vào cuộc sống</h5>
+        </header>
+      </div>
+
+      <!-- Menu -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="../html/Latoutwebbanhang.html">Trang chủ</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/giới thiệu.html">Giới thiệu</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/giỏ hàng.html">Giỏ hàng</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Danh sách</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../html/trang chi tiết nón len.html">Nón len</a></li>
+                  <li><a class="dropdown-item" href="../html/trang chi tiết túi.html">Túi ếch</a></li>
+                  <li><a class="dropdown-item" href="../html/trang chi tiết móc khóa.html">Móc khóa</a></li>
+              
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/góp ý.html">Góp ý</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <hr>
+  <h1>Giỏ hàng</h1>
+
+  <div class="cart-container">
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Hình ảnh</th>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Tổng</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        
+      </tbody>
+    </table>
+
+    <div class="total" id="total-price">Tổng cộng: 0đ</div>
+
+    <div style="text-align:right;">
+      <button class="btn-home" onclick="window.location.href='../html/Latoutwebbanhang.html'">← Tiếp tục mua hàng</button>
+      <button class="btn-clear" onclick="clear"> Xóa giỏ hàng</button>
+    </div>
+  </div>
+    <script>
+    function loadCart() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const cartBody = document.getElementById('cart-body');
+      const totalPriceEl = document.getElementById('total-price');
+      let total = 0;
+
+      cartBody.innerHTML = '';
+
+      cart.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td><img src="${item.image}" alt="${item.name}"></td>
+          <td>${item.name}</td>
+          <td>${item.price.toLocaleString()}đ</td>
+          <td>${item.quantity}</td>
+          <td>${(item.price * item.quantity).toLocaleString()}đ</td>
+        `;
+        cartBody.appendChild(row);
+        total += item.price * item.quantity;
+      });
+
+      totalPriceEl.textContent = 'Tổng cộng: ' + total.toLocaleString() + 'đ';
+    }
+
+    function clearCart() {
+      localStorage.removeItem('cart');
+      loadCart();
+    }
+
+    loadCart();
+  </script>
+
+</body>
+</html>
