@@ -1,0 +1,106 @@
+
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trang Chủ Halloween</title>
+  <link rel="stylesheet" href="../css/cssstyle.css">
+  <!-- Google font -->
+  <link href="../css/HALLOWEEN DEMO Regular.otf" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../html/Trang chủ.html">🦇 Halloween Fest</a>
+      <nav class="nav">
+        <a href="../html/Trang chủ.html">Trang chủ</a>
+        <a href="../html/Lịch sử.html">Lịch sử</a>
+        <a href="../html/gian hàng sản phẩm.html">Gian hàng</a>
+        <a href="../html/bộ sưu tập hình ảnh.html">Bộ sưu tập</a>
+        <a href="../html/form đăng kí.html">Đăng kí</a>
+        <a href="../html/form liên hệ.html">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Background decor layer -->
+  <div class="bg-decor">
+    <div class="moon"></div>
+    <div class="bats">
+      <span class="bat b1"><img src="../image/Iconcreme-Halloween-Bat.512.png" width="50"></span>
+      <span class="bat b2"><img src="../image/Iconcreme-Halloween-Bat.512.png" width="50"></span>
+      <span class="bat b3"><img src="/image/Iconcreme-Halloween-Bat.512.png" width="50"></span>
+    </div>
+    <div class="cat"><img src="../image/Iconcreme-Halloween-Home.512.png" width="200"></div>
+    <div class="net n1"><img src="../image/Iconcreme-Halloween-Net.512.png" width="300"></div>
+    <div class="net n2"><img src="../image/Iconcreme-Halloween-Net.512.png" width="200"></div>
+    <div class="net n3"><img src="../image/Iconcreme-Halloween-Net.512.png" width="180"></div>
+  </div>
+  
+
+  <!-- Thiệp mời chính -->
+  <main class="invite">
+    <section class="card">
+      <h1 class="title">Bạn được mời tới</h1>
+      <h2 class="event">Halloween Night Party</h2>
+      <p class="datetime">31 Tháng 10 • 19:00 • TẠI ĐẠI HỌC SƯ PHẠM TP HỒ CHÍ MINH</p>
+
+      <div class="cta-row">
+        <button id="thiepmoi" class="btn btn-primary">Mở thiệp</button>
+        <a href="../html/form đăng kí.html" class="btn btn-outline">Đăng ký tham gia</a>
+      </div>
+      <!-- Thiệp mời bật lên -->
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closeCard()">&times;</span>
+          <h2>🎃 Lời mời Halloween 🎃</h2>
+          <p>Bạn được mời tham dự <strong>Halloween Night Party</strong>!</p>
+          <p>⏰ Thời gian: 31/10 • 19:00</p>
+          <p>📍 Địa điểm: Đại học Sư phạm TP. Hồ Chí Minh</p>
+          <i>CHO KẸO HAY BỊ GHẸO</i>
+          <audio autoplay>
+            <source src="" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+
+      <audio autoplay>
+        <source src="nhạc halloween.mp3" type="audio/mpeg">
+      </audio>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Web Halloween của Tâm Chi</p>
+    </div>
+  </footer>
+
+
+<script>
+  const popup = document.getElementById("popup");
+  const btn = document.getElementById("thiepmoi");
+
+  // Mở thiệp
+  btn.addEventListener("click", function() {
+    popup.style.display = "flex";
+  });
+
+  // Đóng thiệp
+  function closeCard() {
+    popup.style.display = "none";
+  }
+
+  // Bấm ra ngoài cũng tắt
+  window.addEventListener("click", function(e) {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
